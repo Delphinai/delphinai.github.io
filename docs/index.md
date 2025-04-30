@@ -1,6 +1,8 @@
 # Welcome to Delphin AI Corporation 
 
-DelphinAI Corporation is a privately owned Canadian Federal corporation.
+DelphinAI Corporation is a privately-owned Canadian Federal corporation.
+
+Currently, our main "trade name" activity is [STAR Informatics](https://starinformatics.ca).
 
 ## Contact Us
 
