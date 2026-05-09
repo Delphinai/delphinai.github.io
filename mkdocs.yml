@@ -7,12 +7,12 @@ nav:
       - Overview: docs/index.md
 
 extra_css:
-  - stylesheets/extra.css
+  - docs/stylesheets/extra.css
 
 theme:
   name: "material"
-  favicon: img/favicon.ico
-  logo: img/DelphinaiLogo.jpg
+  favicon: docs/img/favicon.ico
+  logo: docs/img/DelphinaiLogo.jpg
   icon:
     admonition:
     server: material/server
