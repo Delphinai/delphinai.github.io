@@ -1,34 +1,35 @@
 site_name: Delphinai Corporation
 site_url: https://delphinai.ca
-repo_url: https://github.com/Delphinai/delphinai.github.io
 
 nav:
   - Welcome to Delphin AI:
-      - Overview: docs/index.md
+      - Overview: index.md
       - Abbreviations: includes/abbreviations.md
 
 extra_css:
-  - docs/stylesheets/extra.css
+  - stylesheets/extra.css
 
 theme:
   name: "material"
+  custom_dir: docs/overrides
   favicon: img/favicon.ico
-  logo: img/DelphinaiLogo.jpg
+  logo: img/DelphinaiLogo.svg
   icon:
     admonition:
     server: material/server
   language: en
-  # Pick color: https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#primary-color
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: light blue
+      primary: indigo
+      accent: amber
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: blue grey
+      primary: indigo
+      accent: amber
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
