@@ -31,6 +31,8 @@
   font-family: 'DM Sans', sans-serif;
   color: var(--dh-text);
   overflow-x: hidden;
+  width: 100%;
+  flex: 1 1 100%;
 }
 
 /* Neutralise Material's md-main__inner / md-grid constraints
@@ -48,8 +50,7 @@
 /* Hide Material chrome that competes with the home design:
    the duplicate header wordmark, the prev/next pager, and the
    "back to top" pill. Header itself stays for nav + search. */
-body:has(.dh-main) .md-header__title,
-body:has(.dh-main) .md-header__button.md-logo,
+body:has(.dh-main) .md-header,
 body:has(.dh-main) .md-footer__inner,
 body:has(.dh-main) .md-top {
   display: none !important;
