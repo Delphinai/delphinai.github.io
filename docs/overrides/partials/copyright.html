@@ -1,0 +1,26 @@
+{#
+  Override of Material's footer copyright partial.
+  Adds a row of site links (e.g. Privacy Policy) beside the copyright notice.
+  Links are configured in mkdocs.yml under `extra.footer_links`.
+#}
+<div class="md-copyright">
+  {% if config.copyright %}
+    <div class="md-copyright__highlight">
+      {{ config.copyright }}
+    </div>
+  {% endif %}
+  {% if config.extra.footer_links %}
+    <nav class="dh-footer-links" aria-label="Site policies">
+      {% for item in config.extra.footer_links %}
+        {% set href = item.link if "://" in item.link else base_url ~ "/" ~ item.link %}
+        <a href="{{ href }}">{{ item.name }}</a>
+      {% endfor %}
+    </nav>
+  {% endif %}
+  {% if not config.extra.generator == false %}
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  {% endif %}
+</div>

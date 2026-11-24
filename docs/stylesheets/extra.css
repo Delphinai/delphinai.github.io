@@ -259,3 +259,18 @@ body:has(.dh-main) .md-container {
 .dh-main + * {
   padding: 0;
 }
+
+/* ── Footer policy links (Privacy Policy, etc.) ── */
+.dh-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.2em;
+  margin: 0.2em 0 0.4em;
+}
+.dh-footer-links a {
+  color: var(--md-footer-fg-color--light);
+}
+.dh-footer-links a:hover,
+.dh-footer-links a:focus {
+  color: var(--md-footer-fg-color);
+}
