@@ -85,11 +85,14 @@ plugins:
 # Pages reachable only via links (e.g. the footer), not the nav sidebar
 not_in_nav: |
   privacy.md
+  terms.md
 
 extra:
   footer_links:
     - name: Privacy Policy
       link: privacy/
+    - name: Terms of Service
+      link: terms/
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Delphinai
